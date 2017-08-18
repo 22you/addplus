@@ -1,0 +1,63 @@
+.ex-box, .btn-prmary {
+  padding: 10px 0; }
+
+.detail-list ul {
+  padding: 0 10px; }
+
+.detail-list ul li {
+  margin: 10px 0; }
+
+.exchange-container {
+  padding: 20px;
+  background: #f0f0f0; }
+
+.ex-box {
+  background: #fff;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border-bottom: 1px solid #dcdcdc; }
+
+.ex-banner-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.ex-title {
+  background: #d3e9fe;
+  padding: 10px;
+  font-size: 14px;
+  color: #80878d; }
+  .ex-title span {
+    color: #fa131f;
+    font-size: 16px; }
+
+.detail-list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px; }
+
+.img-box {
+  padding: 10px;
+  text-align: center; }
+
+.btn-prmary {
+  background: #4ba5fc;
+  width: 100%;
+  text-align: center; }
+  .btn-prmary a {
+    font-size: 17px;
+    color: #fff; }
+
+#add-plus {
+  display: inline-block; }
+  #add-plus input {
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 14px; }
+  #add-plus strong {
+    margin: 0 20px; }
+
+/*# sourceMappingURL=sxchange.css.map */

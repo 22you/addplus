@@ -1,0 +1,104 @@
+@charset "UTF-8"; // 变量定义
+$grey:#f0f0f0;
+$white:#fff;
+$light-blue:#d3e9fe;
+$min-font:14px;
+$red:#fa131f;
+$primary:#4ba5fc;
+$light-block:#80878d;
+
+%p-10{
+  padding:10px 0;
+}
+%plr-10{
+  padding:0 10px;
+}
+%mtd-10{
+  margin:10px 0;
+}
+@mixin btn-prmary{
+  background: $primary;
+  width:100%;
+  text-align: center;
+  @extend %p-10;
+
+}
+@mixin flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin flex-left-column{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@mixin ex-title{
+  background: $light-blue;
+  padding:10px;
+
+}
+@mixin border-radius($radius){
+  -webkit-border-radius:$radius;
+  border-radius:$radius;
+}
+@mixin item-box{
+    background: $white;
+    @include border-radius(4px);
+    border-bottom:1px solid #dcdcdc;
+}
+.exchange-container{
+  padding:20px;
+  background: $grey;
+}
+.ex-box{
+@include item-box;
+@extend %p-10;
+
+}
+.ex-banner-con{
+  @include flex-column
+}
+.ex-title{
+ @include ex-title;
+ font-size: $min-font;
+ color: $light-block;
+ span{
+   color:$red;
+   font-size:$min-font+2px;
+ }
+}
+.detail-list{
+  ul{
+    @extend %plr-10;
+    @include flex-left-column;
+    font-size: $min-font;
+    li{
+      @extend %mtd-10;
+    }
+  }
+}
+.img-box{
+padding:10px;
+text-align: center;
+}
+.btn-prmary{
+  @include btn-prmary;
+  a{
+    font-size: $min-font+3px;
+    color: $white;
+  }
+}
+#add-plus{
+  display: inline-block;
+  input{
+    width:50px;
+    height:25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: $min-font;
+  }
+  strong{
+    margin:0 20px;
+  }
+}
